@@ -1,3 +1,7 @@
 body{
   text-align: center;
 }
+
+h1, h4{
+  font-family: "PT Sans",Helvetica, Arial, sans-serif;
+}
