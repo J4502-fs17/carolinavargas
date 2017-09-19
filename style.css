@@ -5,3 +5,7 @@ body{
 h1, h4{
   font-family: "PT Sans",Helvetica, Arial, sans-serif;
 }
+
+p, ul{
+  font-family: "IM Fell Great Primer", Georgia, "Times New Roman", serif;
+}
