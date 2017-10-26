@@ -1,21 +1,26 @@
 body{
   text-align: center;
+    background-color: pink;
 }
 
 h1, h4{
   font-family: "PT Sans",Helvetica, Arial, sans-serif;
-  color:white;
+  color:purple;
 }
 
 p,ul{
   font-family: "IM Fell Great Primer", Georgia, "Times New Roman", serif;
-  color:red;
+  color:orange;
   font-weight: bold;
   text-align: center;
 }
 
 ul{
 padding: 0;
+}
+
+#nav li{
+  padding: 14px;
 }
 
 #nav a:link, #nav a:visited{
@@ -28,13 +33,51 @@ text-align:center;
 margin:0 auto;
 }
 
-p{
+
+#nav{
   font-style: italic;
 }
 ul{
   list-style-type:none;
+
 }
 
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+#nav {
+  	display: flex;
+  	flex-direction: column;
+  }
+
+
+
+  .text{
+    flex-grow: 2;
+  }
+
+  .image {
+      display: block;
+  }
+
+  @media (min-width: 600px) {
+  	#nav {
+  		flex-direction: row;
+  		justify-content: center;
+    }
+    .image{
+      float:left;
+      }
+  }
 .footer{
 color: black;
 font-size: 1rem;
@@ -47,8 +90,4 @@ text-align: center;
 }
 img{
   border-style: none;
-}
-
-body{
-  background-color: green;
 }
