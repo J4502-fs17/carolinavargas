@@ -42,7 +42,14 @@ ul{
 
 }
 
-
+.menu-trigger{
+  order:1;
+  font-size:1.75em;
+  width:2em;
+  color:#FFA162;
+  padding:0;
+  text-decoration:none;
+}
 
 .container{
   display: flex;
