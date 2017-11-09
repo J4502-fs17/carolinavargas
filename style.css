@@ -16,40 +16,63 @@ p,ul{
 }
 
 ul{
+list-style-type: none;
 padding: 0;
 }
 
-#nav li{
-  padding: 14px;
-}
-
-#nav a:link, #nav a:visited{
-text-align:center;
-}
-
-#nav a:hover, #nav a:active{
-background-color:white;
-text-align:center;
-margin:0 auto;
+img{
+  border-style: none;
 }
 
 
-#nav{
-  font-style: italic;
-}
-ul{
-  list-style-type:none;
 
+header{
+  display:flex;
+  flex-flow:row;
+  margin: 0;
+  padding:0 10px;
 }
 
 .menu-trigger{
   order:1;
   font-size:1.75em;
   width:2em;
-  color:#FFA162;
+  color:#red;
   padding:0;
   text-decoration:none;
 }
+
+header h1{
+  order:2;
+}
+
+#list {
+  display: none;
+}
+
+#list a:link, a:visited{
+  text-decoration:none;
+  color:#0FB2A8;
+  font-weight:800;
+}
+
+#list a:hover{
+  color:#97FFFB;
+}
+
+#list li{
+  display:block;
+  padding: 14px 16px;
+}
+
+#list ul{
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-content: center;
+}
+
 
 .container{
   display: flex;
@@ -58,14 +81,6 @@ ul{
   justify-content: center;
   align-content: center;
 }
-
-
-
-#nav {
-  	display: flex;
-  	flex-direction: column;
-  }
-
 
 
   .text{
@@ -78,6 +93,7 @@ ul{
   }
 
   .footer{
+  position: absolute;
   color: black;
   font-size: 1rem;
   position: absolute;
@@ -90,7 +106,7 @@ ul{
 
 
   @media (min-width: 600px) {
-  	#nav {
+  	#list{
   		flex-direction: row;
   		justify-content: center;
     }
@@ -106,8 +122,27 @@ ul{
           .text{
             justify-content: center;
           }
-}
+          #list {
+            display:flex;
+          }
 
+          #list ul li{
+            border-top:none;
+          }
+
+          .menu-trigger{
+          display:none;
+          }
+
+          header h1{
+            order: 1;
+          }
+
+          #list{
+            order:2;
+          }
+
+}
 
 
 @media screen and (min-width:1000px){
